@@ -12,10 +12,21 @@ npm start
 
 ## Environment
 
-Set `EVALUATION_SERVICE_BASE_URL` if the evaluation service is not running on `http://localhost:3000`.
+The default evaluation service base URL is `http://20.207.122.201`.
 
-```bash
-EVALUATION_SERVICE_BASE_URL=http://example.com npm start
+Set your authorization token before starting the server:
+
+```powershell
+$env:EVALUATION_SERVICE_TOKEN="your_token_here"
+npm start
+```
+
+If the evaluation service URL changes, set `EVALUATION_SERVICE_BASE_URL` too:
+
+```powershell
+$env:EVALUATION_SERVICE_BASE_URL="http://20.207.122.201"
+$env:EVALUATION_SERVICE_TOKEN="your_token_here"
+npm start
 ```
 
 ## Endpoint
@@ -34,4 +45,3 @@ Example response:
   "totalDuration": 0
 }
 ```
-
