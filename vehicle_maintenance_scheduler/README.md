@@ -45,3 +45,13 @@ Example response:
   "totalDuration": 0
 }
 ```
+
+## API Screenshots
+
+### Depots API Response
+
+![Depots API Response](screenshots/depots-response.png)
+
+### Vehicles API Response
+
+![Vehicles API Response](screenshots/vehicles-response.png)
